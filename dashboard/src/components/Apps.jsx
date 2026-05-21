@@ -13,7 +13,7 @@ const Apps = () => {
     // ✅ Only auth check remains — token grab moved to index.js
     const token = localStorage.getItem("token");
     if (!token) {
-      window.location.href = "http://localhost:3002/login";
+      window.location.href = "https://zerodha-clone-3-vmf8.onrender.com";
     }
   }, []);
 

@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: "http://localhost:3000",
+  baseURL: "https://zerodha-clone-2-0rdc.onrender.com",
 });
 
 instance.interceptors.request.use((config) => {
@@ -20,7 +20,7 @@ instance.interceptors.response.use(
   (err) => {
     if (err.response?.status === 401 || err.response?.status === 403) {
       localStorage.clear();
-      window.location.href = "http://localhost:3002/login"; // frontend login page
+      window.location.href = "https://zerodha-clone-3-vmf8.onrender.com"; // frontend login page
     }
     return Promise.reject(err);
   }

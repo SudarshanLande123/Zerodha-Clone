@@ -11,8 +11,8 @@ const app = express();
 
 app.use(cors({
   origin: [
-    "https://yourfrontend.onrender.com",
-    "https://yourdashboard.onrender.com"
+    "https://zerodha-clone-3-vmf8.onrender.com",
+    "https://zerodha-clone-4-u96n.onrender.com"
   ],
   credentials: true
 }));

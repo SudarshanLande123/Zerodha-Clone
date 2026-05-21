@@ -20,10 +20,10 @@ function Signup() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post("http://localhost:3000/auth/register", formData)
+    axios.post("https://zerodha-clone-2-0rdc.onrender.com", formData)
       .then((res) => {
 
-        window.location.href = `http://localhost:3001?token=${res.data.token}`;
+        window.location.href = `https://zerodha-clone-4-u96n.onrender.com`;
       })
       .catch((err) => {
         setError(err.response?.data?.message || "Signup failed");

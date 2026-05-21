@@ -21,7 +21,7 @@ function Login() {
 
   try {
     const res = await axios.post(
-      "http://localhost:3000/auth/login",
+      "https://zerodha-clone-2-0rdc.onrender.com",
       formData
     );
 
@@ -35,7 +35,7 @@ function Login() {
 
     localStorage.setItem("username", res.data.username || "");
 
-    window.location.href = `http://localhost:3001?token=${res.data.token}`;
+    window.location.href = `https://zerodha-clone-4-u96n.onrender.com`;
   } catch (err) {
     console.log("LOGIN ERROR:", err.response?.data || err.message);
     setError(err.response?.data?.message || "Login failed");
