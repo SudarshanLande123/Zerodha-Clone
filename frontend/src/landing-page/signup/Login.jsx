@@ -21,7 +21,7 @@ function Login() {
 
   try {
     const res = await axios.post(
-      "https://zerodha-clone-2-0rdc.onrender.comauth/login",
+      "https://zerodha-clone-2-0rdc.onrender.com/auth/login",
       formData
     );
 
