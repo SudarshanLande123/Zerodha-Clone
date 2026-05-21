@@ -17,7 +17,7 @@ const Menu = () => {
   const handleLogout = () => {
     localStorage.removeItem("token");
     localStorage.removeItem("userID");
-    window.location.href = "`https://zerodha-clone-3-vmf8.onrender.com/login"; // redirect to frontend login
+    window.location.href = "https://zerodha-clone-3-vmf8.onrender.com/login"; // redirect to frontend login
   };
 
   const menuClass = "menu";
