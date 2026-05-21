@@ -20,7 +20,7 @@ instance.interceptors.response.use(
   (err) => {
     if (err.response?.status === 401 || err.response?.status === 403) {
       localStorage.clear();
-      window.location.href = "https://zerodha-clone-3-vmf8.onrender.com"; // frontend login page
+      window.location.href = "`https://zerodha-clone-3-vmf8.onrender.com/login"; // frontend login page
     }
     return Promise.reject(err);
   }
