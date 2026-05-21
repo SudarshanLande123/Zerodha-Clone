@@ -9,7 +9,13 @@ const auth = require("./middleware/auth.middleware");
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: [
+    "https://yourfrontend.onrender.com",
+    "https://yourdashboard.onrender.com"
+  ],
+  credentials: true
+}));
 app.use(bodyParser.json());
 
 const PORT = process.env.PORT || 3000;
