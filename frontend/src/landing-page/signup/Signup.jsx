@@ -26,8 +26,11 @@ function Signup() {
         window.location.href = `https://zerodha-clone-4-u96n.onrender.com?token=${res.data.token}`;
       })
       .catch((err) => {
+        const errors = err;
         setError(err.response?.data?.message || "Signup failed");
+        console.log(errors);
       });
+      
   };
 
 

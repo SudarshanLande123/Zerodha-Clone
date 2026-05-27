@@ -9,6 +9,7 @@ const auth = require("./middleware/auth.middleware");
 
 const app = express();
 
+
 app.use(cors({
   origin: [
     "https://zerodha-clone-3-vmf8.onrender.com",
